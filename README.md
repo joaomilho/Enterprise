@@ -544,6 +544,30 @@ while(i < chars2.length()) {
 {name: 'John'}.values() // ['John']
 ```
 
+### Chapter 7: control structures
+
+To avoid those pesky functional programmers to take over, Enterprise™ has no
+iterators. No higher order whatever. No LGADBTS. You can do everything with
+`if`s and `while`s. As a wise Enterprise™ developer once said:
+
+> "You can do anything with any language."
+
+##### while
+
+```
+while(condition) {
+  // code
+}
+```
+
+##### if
+
+```
+if(condition) {
+  // code
+}
+```
+
 ### Implementations
 
 // TBD
