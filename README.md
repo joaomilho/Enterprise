@@ -310,7 +310,7 @@ represents a nested folder you have to create, in addition to the standard
 ```
 /com
   /enterprise
-    /Disruptive
+    /disruptive
       /deep
         /learning
           /data
