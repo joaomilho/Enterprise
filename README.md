@@ -1,7 +1,6 @@
-<p align="center">
- <img src="logo.png" />
-
 # Enterprise™
+
+<img src="logo.png" style="float: right;" />
 
 Enterprise™ is a non deterministic unnecessarily statically typed
 Turing-complete programming language.
