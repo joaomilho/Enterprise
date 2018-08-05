@@ -62,7 +62,7 @@ On top of these, Enterprise™ adds:
 
 ##### copyright comment
 
-```java
+```
 /©
   This code is property of ACME™ studios 2017.
 ©/
@@ -76,7 +76,7 @@ copyright (and a comment). On top of that add an NDA comment (see below).
 
 ##### NDA comment
 
-```java
+```
 /©
   This following code implements a "Web Dropdown Menu", copyright number 9283F3.
 ©/
@@ -89,7 +89,7 @@ NDA/
 
 ##### passive agressive comment
 
-```java
+```
 /?
   This next bit is oh so lovely
 ?/
@@ -104,7 +104,7 @@ so the reader _must_ assume the opposite.
 Since Enterprise™ will be widely used for job interviews, the interview comment
 is very handy to "explain how you reason" to your interviewer:
 
-```java
+```
 /¯\_(ツ)_/¯
   ...this could be done in O(1) if I had the time...
 ¯\_(ツ)_/¯/
@@ -112,7 +112,7 @@ is very handy to "explain how you reason" to your interviewer:
 
 ##### improve in the future comment
 
-```java
+```
 /soon 1985-11-20
   using a while here would be more performatic
 soon/
@@ -128,7 +128,7 @@ Deadline comments are extremely important to have our code disrupting the market
 on time, seizing all the opportunity costs. Deadline comments also have a date
 attached.
 
-```java
+```
 /deadline 1997-01-11
   We need to ship this game before Xmas. No delays accepted.
 deadline/
