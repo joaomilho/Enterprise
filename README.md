@@ -1,6 +1,6 @@
 # Enterprise™
 
-<img src="logo.png" style="float: right;" />
+<img src="logo.png" align="right" />
 
 Enterprise™ is a non deterministic unnecessarily statically typed
 Turing-complete programming language.
@@ -17,6 +17,13 @@ On top of that, articles about the "Best Programming Languages for Enterprise
 Development" will lose their meaning.
 
 ## Enterprise™ guide
+
+* [Comments](#chapter-1-comments)
+* [Classes](#chapter-2-classes)
+* [Variables and types](#chapter-3-variables-and-types)
+* [Operations](#chapter-4-operations)
+* [Built in methods](#chapter-5-built-in-methods)
+* [Implementations](#implementations)
 
 ### Chapter 1: comments
 
@@ -184,223 +191,39 @@ they'll share a common lingo.
 
 Here's the full list of accepted Enterpresey™ terms:
 
-```java
-[
-  "Accelerate",
-  "Acceleration",
-  "Account",
-  "Active",
-  "Activity",
-  "Agile",
-  "Agility",
-  "Ajax",
-  "Algo",
-  "Analytics",
-  "Analyze",
-  "Analyzer",
-  "Ballpark",
-  "Big",
-  "Bit",
-  "Bizmeth",
-  "Block",
-  "Boost",
-  "Bootstrap",
-  "Bootstraped",
-  "Brand",
-  "Business",
-  "Buzz",
-  "Car",
-  "Chain",
-  "Chart",
-  "Clickthrough",
-  "Cloud",
-  "Coin",
-  "Consumer",
-  "Content",
-  "Converge",
-  "Convergence",
-  "Coordinate",
-  "Coordinator",
-  "Complex",
-  "Convert",
-  "Convertion",
-  "Cost",
-  "Costs",
-  "Critical",
-  "Crypto",
-  "Currency",
-  "Customer",
-  "Cyber",
-  "Data",
-  "Deep",
-  "Delegate",
-  "Delegator",
-  "Design",
-  "Dev",
-  "Develop",
-  "Development",
-  "Digital",
-  "Disrupt",
-  "Disruptor",
-  "Disruptive",
-  "Diverse",
-  "Diversify",
-  "Diversifier",
-  "Diversity",
-  "Downsize",
-  "Downsized",
-  "Drive",
-  "Driven",
-  "Driver",
-  "Economy",
-  "Economic",
-  "Employ",
-  "Employee",
-  "Employer",
-  "Empowered",
-  "Engine",
-  "Enterprise",
-  "Entrepreneur",
-  "Entropy",
-  "Equity",
-  "Evolution",
-  "Evolve",
-  "Evolving",
-  "Eyeball",
-  "Eyeballs",
-  "Facade",
-  "Factory",
-  "Fast",
-  "Fee",
-  "Fizz",
-  "Flat",
-  "Founder",
-  "Founders",
-  "Framework",
-  "Free",
-  "Future",
-  "Fuzzy",
-  "Generate",
-  "Generation",
-  "Generator",
-  "Global",
-  "Gluten",
-  "Graph",
-  "Graphic",
-  "Group",
-  "Growth",
-  "Guideline",
-  "Guidelines",
-  "Hack",
-  "Hacking",
-  "Hardware",
-  "Holistic",
-  "Human",
-  "Hyperlocal",
-  "Immerse",
-  "Immersion",
-  "Immersive",
-  "Innovate",
-  "Innovative",
-  "Innovativity",
-  "Innovator",
-  "Internet",
-  "Intranet",
-  "Invest",
-  "Investment",
-  "Item",
-  "Iterator",
-  "Java",
-  "Lactose",
-  "Learn",
-  "Learning",
-  "Leverage",
-  "Line",
-  "List",
-  "Manage",
-  "Management",
-  "Manager",
-  "Market",
-  "Marketing",
-  "Media",
-  "Mega",
-  "Merchant",
-  "Message",
-  "Micro",
-  "Millenial",
-  "Mindshare",
-  "Mine",
-  "Mining",
-  "Mission",
-  "Module",
-  "Momentum",
-  "Money",
-  "Nano",
-  "Network",
-  "New",
-  "Next",
-  "Number",
-  "Nut",
-  "Object",
-  "Operation",
-  "Operator",
-  "Opportinity",
-  "Ops",
-  "Order",
-  "Organic",
-  "Paradigm",
-  "Passionate",
-  "Pattern",
-  "Person",
-  "Pie",
-  "Point",
-  "Policy",
-  "Portal",
-  "Product",
-  "Proof",
-  "Provable",
-  "Proxy",
-  "Resource",
-  "Return",
-  "Roadmap",
-  "Scalable",
-  "Science",
-  "Self",
-  "Service",
-  "Services",
-  "Share",
-  "Sharing",
-  "Simple",
-  "Skeuomorphic",
-  "Speed",
-  "Software",
-  "Solution",
-  "Square",
-  "Startup",
-  "Streamline",
-  "Streamlined",
-  "Super",
-  "Sustainability",
-  "Sustainable",
-  "Synergic",
-  "Synergy",
-  "System",
-  "Tax",
-  "Text",
-  "Time",
-  "Trade",
-  "Trans",
-  "Upsize",
-  "Upsizer",
-  "User",
-  "Viral",
-  "Virality",
-  "Viralize",
-  "Visual",
-  "Web",
-  "World"
-]
-```
+||||||||
+|-|-|-|-|-|-|-|
+|Accelerate|Acceleration|Account|Active|Activity|Agile|Agility|
+|Ajax|Algo|Analytics|Analyze|Analyzer|Ballpark|Big|
+|Bit|Bizmeth|Block|Boost|Bootstrap|Bootstraped|Brand|
+|Business|Buzz|Car|Chain|Chart|Clickthrough|Cloud|
+|Coin|Consumer|Content|Converge|Convergence|Coordinate|Coordinator|
+|Complex|Convert|Convertion|Cost|Costs|Critical|Crypto|
+|Currency|Customer|Cyber|Data|Deep|Delegate|Delegator|
+|Design|Dev|Develop|Development|Digital|Disrupt|Disruptor|
+|Disruptive|Diverse|Diversify|Diversifier|Diversity|Downsize|Downsized|
+|Drive|Driven|Driver|Economy|Economic|Employ|Employee|
+|Employer|Empowered|Engine|Enterprise|Entrepreneur|Entropy|Equity|
+|Evolution|Evolve|Evolving|Eyeball|Eyeballs|Facade|Factory|
+|Fast|Fee|Fizz|Flat|Founder|Founders|Framework|
+|Free|Future|Fuzzy|Generate|Generation|Generator|Global|
+|Gluten|Graph|Graphic|Group|Growth|Guideline|Guidelines|
+|Hack|Hacking|Hardware|Holistic|Human|Hyperlocal|Immerse|
+|Immersion|Immersive|Innovate|Innovative|Innovativity|Innovator|Internet|
+|Intranet|Invest|Investment|Item|Iterator|Java|Lactose|
+|Learn|Learning|Leverage|Line|List|Manage|Management|
+|Manager|Market|Marketing|Media|Mega|Merchant|Message|
+|Micro|Millenial|Mindshare|Mine|Mining|Mission|Module|
+|Momentum|Money|Nano|Network|New|Next|Number|
+|Nut|Object|Operation|Operator|Opportinity|Ops|Order|
+|Organic|Paradigm|Passionate|Pattern|Person|Pie|Point|
+|Policy|Portal|Product|Proof|Provable|Proxy|Resource|
+|Return|Roadmap|Scalable|Science|Self|Service|Services|
+|Share|Sharing|Simple|Skeuomorphic|Speed|Software|Solution|
+|Square|Startup|Streamline|Streamlined|Super|Sustainability|Sustainable|
+|Synergic|Synergy|System|Tax|Text|Time|Trade|
+|Trans|Upsize|Upsizer|User|Viral|Virality|Viralize|
+|Visual|Web|World|
 
 On top of these terms, you can use any upcase char (A-Z) and number, like in
 "fdcVisualCRMWebDelegator" or "fdcViralB2BMicroServiceManager".
@@ -687,3 +510,7 @@ while(i < chars2.length()) {
 {name: 'John'}.keys() // ['name']
 {name: 'John'}.values() // ['John']
 ```
+
+### Implementations
+
+// TBD
