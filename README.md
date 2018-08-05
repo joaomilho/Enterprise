@@ -324,6 +324,10 @@ represents a nested folder you have to create, in addition to the standard
                           fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager.E™
 ```
 
+Here's that structure in a random editor:
+
+<img src="enterprise-folder-struct.png" align="center" />
+
 ### Chapter 4: variables and types
 
 Complicated types only makes software complicated. So Enterprise™ has a minimal
