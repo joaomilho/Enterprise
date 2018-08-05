@@ -554,7 +554,7 @@ iterators. No higher order whatever. No LGADBTS. You can do everything with
 
 ##### while
 
-```
+```java
 while(condition) {
   // code
 }
@@ -562,7 +562,7 @@ while(condition) {
 
 ##### if
 
-```
+```java
 if(condition) {
   // code
 }
