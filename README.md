@@ -76,7 +76,7 @@ On top of these, Enterprise™ adds:
 ```
 
 Every Enterprise™ program _must_ begin with a copyright notice, else it will
-not compile and fail with an `UnexpectedOpenSourceException` error.
+not compile and fail with an `UnexpectedNonDisruptiveOpenSourceException` error.
 
 It's customary to cover any non trivial implementation in Enterprise™ with a
 copyright (and a comment). On top of that add an NDA comment (see below).
@@ -169,7 +169,7 @@ soon/
 
 ### Chapter 2: classes
 
-##### naming
+#### naming
 
 Classes are named with Hungarian Case. Hungarian Case is similar to Pascal Case,
 but is prefixed with one or more type characters (see more below). A class must
@@ -178,10 +178,10 @@ other languages may be investigated by our lawyers).
 
 Type characters applicable to classes:
 
-fdc: final disruptive class
-fuc: final unnecessary class
+* `fdc` final disruptive class
+* `fuc` final unnecessary class
 
-Enterpresey™ terms:
+#### Enterpresey™ terms:
 
 After the prefix, a class name may have any number of Enterpresey™ terms. In
 Enterprese™, differently from other languages, class names are not open to
@@ -232,7 +232,7 @@ On top of these terms, you can use any upcase char (A-Z) and number, like in
 Finally, some articles are admitted:
 
 ```java
-["As", "To", "Of", "In", "Out", "On", "Off", "At", "Not", "With", "Without"]
+["As", "To", "Of", "In", "Out", "On", "Off", "At", "Not", "Non", "With", "Without"]
 ```
 
 This can be used to compose, as in `fdcNextGenerationRoadmapAsAServiceProxy` or
@@ -265,33 +265,30 @@ final disruptive class fdcMillenialUserManager {
 ### unnecessary classes
 
 Since all code in Enterprise™ goes in the disruptive class, any other class you
-declare, although syntatically correct and properly parsed, is unnecessary.
-Because of that, they must start with the `unnecessary` keyword. Since they
-can't be extended or instantiated, they're also final. Also, since all code
-goes in `main`, you define these classes there. Ex:
+declare, although syntatically correct, is unnecessary. Because of that, they
+_must_ start with the `unnecessary` keyword. Since they can't be extended or
+instantiated, they're also final. Although disruptive classes have a very
+specific location in your folder structure, unnecessary classes can go anywhere
+(see more on next chapter). Here's an example of an unnecessary class:
 
 ```java
-final disruptive class fdcMillenialUserManager {
-  final immutable void main () {
-    final unnecessary class fucUser {}
-  }
-}
+final unnecessary class fucNutFreeUserManager {}
 ```
 
 These classes can have a constructor, so that if they _were_ used, they _could_
 receive params. Since constructors don't return, they must be `void`. Since
-the methods can't be overriden or used, they're also `final` and `unnecessary`:
+the methods can't be overriden – or used –, they're also `final` and `unnecessary`:
 
 ```java
-// inside main
-final unnecessary class fucUser {
-  final unnecessary void constructor(String name, Int age) {
+final unnecessary class fucNutFreeUserManager {
+  final unnecessary void constructor(String name, Int nutsEatn, Int maxNuts) {
     this.name = name
-    this.age = age
+    this.nutsEatn = nutsEatn
+    this.maxNuts = maxNuts
   }
 
-  final unnecessary Int fuIAgeAYearAgo() {
-    return this.age - 1
+  final unnecessary Int nutsTillDeath() {
+    return this.maxNuts - this.nutsEatn
   }
 }
 ```
@@ -327,6 +324,9 @@ represents a nested folder you have to create, in addition to the standard
 Here's that structure in a random editor:
 
 <img src="enterprise-folder-struct.png" align="center" />
+
+As stated in previous chapter, unnecessary classes don't need to follow this
+structure. As a matter of fact, the more random you place them, the better.
 
 ### Chapter 4: variables and types
 
@@ -397,11 +397,11 @@ unnecessary var XML String example = // TBD
 The O1Type, commonly known as "hash table" in other languages, is named this way
 to simplify interviews. If you're asked:
 
-- Which type could we use here to have a O(1) lookup?
+> "Which type could we use here to have a O(1) lookup?"
 
-You can simply say:
+You can simply say, with all your confidence:
 
-- The O1Type.
+> "The ... O1 ... Type ...?"
 
 Nailed.
 
@@ -547,3 +547,7 @@ while(i < chars2.length()) {
 ### Implementations
 
 // TBD
+
+### Roadmap
+
+1. Automatic unnecessary classes generator.
