@@ -216,7 +216,7 @@ Here's the full list of accepted Enterpresey™ terms:
 |Manager|Market|Marketing|Media|Mega|Merchant|Message|
 |Micro|Millenial|Mindshare|Mine|Mining|Mission|Module|
 |Momentum|Money|Nano|Network|New|Next|Number|
-|Nut|Object|Operation|Operator|Opportinity|Ops|Order|
+|Nut|Object|Operation|Operator|Opportunity|Ops|Order|
 |Organic|Paradigm|Passionate|Pattern|Person|Pie|Point|
 |Policy|Portal|Product|Proof|Provable|Proxy|Resource|
 |Return|Roadmap|Scalable|Science|Self|Service|Services|
@@ -301,8 +301,8 @@ final unnecessary class fucUser {
 All Enterprise™ use the extension "E™". This is to make clear these files are
 under a trade mark in a quick glance.
 
-Your folder structure dependends on the name of your disruptive class (see more
-below). Let's say your disruptive class is called
+Your folder structure dependends on the name of your disruptive class. Let's say
+your disruptive class is called
 `fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager`, each word
 represents a nested folder you have to create, in addition to the standard
 `/com/enterprise/disruptive`. So your folder structure will look like:
