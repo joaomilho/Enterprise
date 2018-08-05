@@ -18,41 +18,13 @@ Development" will lose their meaning.
 
 ## Enterprise™ guide
 
-* [Extensions and file structure](#chapter-0-extensions-and-file-structure)
 * [Comments](#chapter-1-comments)
 * [Classes](#chapter-2-classes)
-* [Variables and types](#chapter-3-variables-and-types)
-* [Operations](#chapter-4-operations)
-* [Built in methods](#chapter-5-built-in-methods)
+* [Extensions and file structure](#chapter-3-extensions-and-file-structure)
+* [Variables and types](#chapter-4-variables-and-types)
+* [Operations](#chapter-5-operations)
+* [Built in methods](#chapter-6-built-in-methods)
 * [Implementations](#implementations)
-
-### Chapter 0: Extensions and file structure
-
-All Enterprise™ use the extension "E™". This is to make clear these files are
-under a trade mark in a quick glance.
-
-Your folder structure dependends on the name of your disruptive class (see more
-below). Let's say your disruptive class is called
-`fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager`, each word
-represents a nested folder you have to create, in addition to the standard
-`/com/enterprise/disruptive`. So your folder structure will look like:
-
-```
-/com
-  /enterprise
-    /Disruptive
-      /deep
-        /learning
-          /data
-            /science
-              /holistic
-                /fizz
-                  /buzz
-                    /synergic
-                      /framework
-                        /manager
-                          fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager.E™
-```
 
 ### Chapter 1: comments
 
@@ -324,7 +296,35 @@ final unnecessary class fucUser {
 }
 ```
 
-### Chapter 3: variables and types
+### Chapter 3: Extensions and file structure
+
+All Enterprise™ use the extension "E™". This is to make clear these files are
+under a trade mark in a quick glance.
+
+Your folder structure dependends on the name of your disruptive class (see more
+below). Let's say your disruptive class is called
+`fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager`, each word
+represents a nested folder you have to create, in addition to the standard
+`/com/enterprise/disruptive`. So your folder structure will look like:
+
+```
+/com
+  /enterprise
+    /Disruptive
+      /deep
+        /learning
+          /data
+            /science
+              /holistic
+                /fizz
+                  /buzz
+                    /synergic
+                      /framework
+                        /manager
+                          fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager.E™
+```
+
+### Chapter 4: variables and types
 
 Complicated types only makes software complicated. So Enterprise™ has a minimal
 list of types:
@@ -406,7 +406,7 @@ Nailed.
 // TBD
 
 
-### Chapter 4: operations
+### Chapter 5: operations
 
 ##### Numeric operations
 
@@ -487,7 +487,7 @@ grades['john'];;; // 6
 grades['mary'];;; // 5
 ```
 
-### Chapter 5: built in methods
+### Chapter 6: built in methods
 
 ##### String
 
