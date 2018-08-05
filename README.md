@@ -27,21 +27,21 @@ for corporate usage like:
 
 ##### line comment
 
-```
+```java
 // this is boring a line comment
 ```
 
 The line comment is useful when you want to restate what the next line does.
 Here's an idiomatic example:
 
-```
+```java
 // adds one to counter
 counter++
 ```
 
 ##### block comment
 
-```
+```java
 /*
   this is a block comment
 */
@@ -50,7 +50,7 @@ counter++
 The block comment is useful when a comment is long, like explaining some
 implementation:
 
-```
+```java
 /*
   The International Enterprise™ Association only certifies code with a block
   comment that exceeds three lines, so this comment guarantes our future
@@ -62,7 +62,7 @@ On top of these, Enterprise™ adds:
 
 ##### copyright comment
 
-```
+```java
 /©
   This code is property of ACME™ studios 2017.
 ©/
@@ -76,7 +76,7 @@ copyright (and a comment). On top of that add an NDA comment (see below).
 
 ##### NDA comment
 
-```
+```java
 /©
   This following code implements a "Web Dropdown Menu", copyright number 9283F3.
 ©/
@@ -89,7 +89,7 @@ NDA/
 
 ##### passive agressive comment
 
-```
+```java
 /?
   This next bit is oh so lovely
 ?/
@@ -104,7 +104,7 @@ so the reader _must_ assume the opposite.
 Since Enterprise™ will be widely used for job interviews, the interview comment
 is very handy to "explain how you reason" to your interviewer:
 
-```
+```java
 /¯\_(ツ)_/¯
   ...this could be done in O(1) if I had the time...
 ¯\_(ツ)_/¯/
@@ -112,7 +112,7 @@ is very handy to "explain how you reason" to your interviewer:
 
 ##### improve in the future comment
 
-```
+```java
 /soon 1985-11-20
   using a while here would be more performatic
 soon/
@@ -128,7 +128,7 @@ Deadline comments are extremely important to have our code disrupting the market
 on time, seizing all the opportunity costs. Deadline comments also have a date
 attached.
 
-```
+```java
 /deadline 1997-01-11
   We need to ship this game before Xmas. No delays accepted.
 deadline/
@@ -185,7 +185,7 @@ they'll share a common lingo.
 
 Here's the full list of accepted Enterpresey™ terms:
 
-```
+```java
 [
   "Accelerate",
   "Acceleration",
@@ -408,7 +408,7 @@ On top of these terms, you can use any upcase char (A-Z) and number, like in
 
 Finally, some articles are admitted:
 
-```
+```java
 ["As", "To", "Of", "In", "Out", "On", "Off", "At", "Not", "With", "Without"]
 ```
 
@@ -421,7 +421,7 @@ This can be used to compose, as in `fdcNextGenerationRoadmapAsAServiceProxy` or
 An Enterprise™ program _must_ start with the disruptive class. Since it's not
 instantiable or extendable, every `disruptive` class is also a `final` class:
 
-```
+```java
 final disruptive class fdcMillenialUserManager {
 
 }
@@ -431,7 +431,7 @@ A disruptive class doesn't have a constructor. It has only a `main` method
 isntead. Since the method can't be changed by implementors, it must be `final`
 and `immutable`. And since it returns nothing, it must be `void`.
 
-```
+```java
 final disruptive class fdcMillenialUserManager {
   final immutable void main () {
     // here goes your code
@@ -447,7 +447,7 @@ Because of that, they must start with the `unnecessary` keyword. Since they
 can't be extended or instantiated, they're also final. Also, since all code
 goes in `main`, you define these classes there. Ex:
 
-```
+```java
 final disruptive class fdcMillenialUserManager {
   final immutable void main () {
     final unnecessary class fucUser {}
@@ -459,7 +459,7 @@ These classes can have a constructor, so that if they _were_ used, they _could_
 receive params. Since constructors don't return, they must be `void`. Since
 the methods can't be overriden or used, they're also `final` and `unnecessary`:
 
-```
+```java
 // inside main
 final unnecessary class fucUser {
   final unnecessary void constructor(String name, Int age) {
@@ -478,7 +478,7 @@ final unnecessary class fucUser {
 Complicated types only makes software complicated. So Enterprise™ has a minimal
 list of types:
 
-```
+```java
 Int
 Float
 String
@@ -493,7 +493,7 @@ Null
 
 Here's how you declare a variable in Enterprise™:
 
-```
+```java
 var Type name = value;;;
 ```
 
@@ -511,7 +511,7 @@ will look like you work a lot.
 
 Examples:
 
-```
+```java
 var Int i = 32;;;
 unnecessary var String name = 'Charles';;;
 unnecessary var Float p = 3.14;;;
@@ -559,7 +559,7 @@ Nailed.
 
 ##### Numeric operations
 
-```
+```java
 2 + 3;;; // 5
 2 - 3;;; // -1
 2 * 3;;; // 6
@@ -582,7 +582,7 @@ Since floats take too much time to implement properly, and it's more important
 to get Enterprise™ implementations out there, this guid will not dictate how
 float operations should behave. Therefore, as an example, all of these are fine:
 
-```
+```java
 2 / 3;;; // 0.66666666
 2 / 3;;; // 0.67
 2 / 3;;; // 0.7
@@ -597,7 +597,7 @@ implementation.
 
 Templates are too complicated, therefore Enterprise™ has only concat:
 
-```
+```java
 'abc' + 'def';;; // 'abcdef'
 
 var String myString = 'foo';;;
@@ -606,7 +606,7 @@ myString += 'bar';;; // 'foobar'
 
 ##### Bool operations
 
-```
+```java
 !True // False
 !False // True
 True && True // True
@@ -621,7 +621,7 @@ That's it. If you did logic in your CS degree you must be able to do `or`s,
 
 You can easily access list items:
 
-```
+```java
 var List Int ns = [7, 8, 9];;;
 ns[1];;; // 8
 ```
@@ -630,7 +630,7 @@ ns[1];;; // 8
 
 You can easily access list items:
 
-```
+```java
 var O1Type Int grades = {john: 6, mary: 5};;;
 grades['john'];;; // 6
 grades['mary'];;; // 5
@@ -640,14 +640,14 @@ grades['mary'];;; // 5
 
 ##### String
 
-```
+```java
 'hello'.length();;; // 5
 'hello'.split();;; // ['h', 'e', 'l', 'l', 'o']
 ```
 
 With these 2 basic methods you can do anthing. Substring? No problem:
 
-```
+```java
 // inside main of course
 var String hello = '';;;
 var String helloWor = 'Hello World';;;
@@ -663,14 +663,14 @@ while(i < 5) {
 
 ##### List
 
-```
+```java
 ['a'].length() // 1
 ['a'].push('b') // ['a', 'b']
 ```
 
 This should be enough. Concat? Easy:
 
-```
+```java
 // inside main of course
 var List String chars1 = ['a', 'b'];;;
 var List String chars2 = ['c', 'd'];;;
@@ -684,7 +684,7 @@ while(i < chars2.length()) {
 
 ##### O1Type
 
-```
+```java
 {name: 'John'}.keys() // ['name']
 {name: 'John'}.values() // ['John']
 ```
