@@ -360,8 +360,8 @@ integers and floats and 8 chars for other types.
 `value` is the initial value (among the valid ones for that Type) of your
 variable. If a variable is not used, you may add the `unnecessary` flag to it.
 
-The instructions must be ended with three semicolons. This adds clarity to where
-it ends, beats OCaml in 1 and makeys your `;` key weathered over time, so it
+The instructions must be ended with three semicolons (;;;). This a) adds clarity to where
+it ends, b) beats OCaml by 1 and c) makes your `;` key weathered over time, so it
 will look like you work a lot.
 
 Examples:
@@ -434,7 +434,7 @@ i /= 1;;; // 2 (see note below)
 ```
 
 Since floats take too much time to implement properly, and it's more important
-to get Enterprise™ implementations out there, this guid will not dictate how
+to get Enterprise™ implementations out there, this guide will not dictate how
 float operations should behave. Therefore, as an example, all of these are fine:
 
 ```java
