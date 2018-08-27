@@ -484,7 +484,7 @@ ns[1];;; // 8
 
 ##### O1Type access
 
-You can easily access list items:
+You can easily access o1Type items:
 
 ```java
 var O1Type Int grades = {john: 6, mary: 5};;;
