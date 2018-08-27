@@ -43,7 +43,7 @@ Here's an idiomatic example:
 
 ```java
 // adds one to counter
-counter++
+counter++;;;
 ```
 
 ##### block comment
@@ -421,7 +421,7 @@ Nailed.
 2 / 3;;; // 0.66666666 (see note below)
 3 % 2;;; // 1 (mod)
 
-var myInt i = 2;;;
+var Int myInt i = 2;;;
 i += 1;;; // 3
 i -= 1;;; // 1
 i *= 1;;; // 2
@@ -520,8 +520,8 @@ while(i < 5) {
 ##### List
 
 ```java
-['a'].length() // 1
-['a'].push('b') // ['a', 'b']
+['a'].length();;; // 1
+['a'].push('b');;; // ['a', 'b']
 ```
 
 This should be enough. Concat? Easy:
@@ -541,8 +541,8 @@ while(i < chars2.length()) {
 ##### O1Type
 
 ```java
-{name: 'John'}.keys() // ['name']
-{name: 'John'}.values() // ['John']
+{name: 'John'}.keys();;; // ['name']
+{name: 'John'}.values();;; // ['John']
 ```
 
 ### Chapter 7: control structures
