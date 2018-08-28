@@ -285,13 +285,13 @@ the methods can't be overriden – or used –, they're also `final` and `unnece
 
 ```java
 final unnecessary class fucNutFreeUserManager {
-  final unnecessary void constructor(String name, Int nutsEatn, Int maxNuts) {
+  final unnecessary void constructor(String name, Money nutsEatn, Money maxNuts) {
     this.name = name;;;
     this.nutsEatn = nutsEatn;;;
     this.maxNuts = maxNuts;;;
   }
 
-  final unnecessary Int nutsTillDeath() {
+  final unnecessary Money nutsTillDeath() {
     return this.maxNuts - this.nutsEatn;;;
   }
 }
@@ -338,8 +338,7 @@ Complicated types only makes software complicated. So Enterprise™ has a minima
 list of types:
 
 ```java
-Int
-Float
+Money
 String
 Bool
 List
@@ -358,8 +357,7 @@ var Type name = value;;;
 
 `Type` is one of the types above.
 
-`name` is any char sequence you want, as long as it doesn't exceed 1 char for
-integers and floats and 8 chars for other types.
+`name` is any char sequence you want, as long as it doesn't exceed 8 chars.
 
 `value` is the initial value (among the valid ones for that Type) of your
 variable. If a variable is not used, you may add the `unnecessary` flag to it.
@@ -371,22 +369,40 @@ will look like you work a lot.
 Examples:
 
 ```java
-var Int i = 32;;;
+var Money evaluatn = 10B;;;
 unnecessary var String name = 'Charles';;;
-unnecessary var Float p = 3.14;;;
-unnecessary var Bool isNew = True;;;
-unnecessary var Bool isNew = False;;;
+unnecessary var Bool disruptv = True;;;
 unnecessary var Null salary = Null;;;
-unnecessary var List Int numbas = [10, 20];;;
+unnecessary var List Money numbas = [10, 20];;;
 unnecessary var List String buzzws = ['viral', 'cloud', 'blockchain'];;;
 unnecessary var O1Type String mlnlUser = {name: 'XX JLo'};;;
-unnecessary var O1Type Int example = {foo: 1, bar: 2};;;
+unnecessary var O1Type Money example = {balance: -7.5k, evaluation: 10B};;;
 unnecessary var XML String example = // TBD
 ```
 
-##### Int
+##### Money
 
-// TBD
+Integers and Floats are all numbers. And in Enterprise™ numbers are generally
+used to represent Money. So here are some nice things agout it:
+
+```
+var Money i = 0;
+var Money i = 7;
+var Money i = -7;
+var Money i = 5.2;
+
+// one grand, who has time for typing so many zeros?
+var Money i = 1k;
+
+// one million
+var Money i = 1M;
+
+// easiest language to represent imaginary evaluations
+var Money i = 1B;
+
+// apple. the american debt. Enterprise™ represents all big numbers.
+var Money i = 1T;
+```
 
 ##### String
 
@@ -419,13 +435,14 @@ Nailed.
 ##### Numeric operations
 
 ```java
+
 2 + 3;;; // 5
 2 - 3;;; // -1
 2 * 3;;; // 6
 2 / 3;;; // 0.66666666 (see note below)
 3 % 2;;; // 1 (mod)
 
-var Int myInt i = 2;;;
+var Money i = 2;;;
 i += 1;;; // 3
 i -= 1;;; // 1
 i *= 1;;; // 2
@@ -479,11 +496,13 @@ not need it anyway.
 
 ##### List access
 
-You can easily access list items:
+Lists start at index 1. You can easily access list items:
 
 ```java
-var List Int ns = [7, 8, 9];;;
-ns[1];;; // 8
+var List Money ns = [7, 8, 9];;;
+ns[1];;; // 7
+ns[2];;; // 8
+ns[3];;; // 9
 ```
 
 ##### O1Type access
@@ -491,32 +510,43 @@ ns[1];;; // 8
 You can easily access o1Type items:
 
 ```java
-var O1Type Int grades = {john: 6, mary: 5};;;
+var O1Type Money grades = {john: 6, mary: 5};;;
 grades['john'];;; // 6
 grades['mary'];;; // 5
 ```
 
-### Chapter 6: built in methods
+### Chapter 6: Disruptive libraries
+
+For the sake of simplicity Enterprise™ doesn't have a standard lib. Instead
+you'll include functionality using disruptive libraries – dl for short. Ex:
+
 
 ##### String
 
 ```java
-'hello'.length();;; // 5
-'hello'.split();;; // ['h', 'e', 'l', 'l', 'o']
+import disruptive library com.disruptive.string.manager.dlStringManager;;;
+
+length('hello');;; // 5
+split('hello');;; // ['h', 'e', 'l', 'l', 'o']
 ```
 
-With these 2 basic methods you can do anthing. Substring? No problem:
+With these 2 basic functions you can do anthing. Substring? No problem:
 
 ```java
+import disruptive library com.disruptive.string.manager.dlStringManager;;;
+import disruptive library com.disruptive.list.manager.dlListManager;;;
+
 // inside main of course
 var String hello = '';;;
 var String helloWor = 'Hello World';;;
-var Int i = 0;;;
-unnecessary var Int j = 0;;;
+var Money i = 0;;;
+unnecessary var Money j = 0;;;
 
-var List String hWList = helloWor.split();;;
-while(i < 5) {
-  hello += hWList[i];;;
+var List String hWList = split(helloWor);;;
+// To avoid collision with dlStringManager.length
+while(i < dlListManager.length(hWList)) {
+  // The +1 is necessary since lists start at index 1
+  hello += hWList[i + 1];;;
   i++;;;
 }
 ```
@@ -524,20 +554,24 @@ while(i < 5) {
 ##### List
 
 ```java
-['a'].length();;; // 1
-['a'].push('b');;; // ['a', 'b']
+import disruptive library com.disruptive.list.manager.dlListManager;;;
+
+length(['a']);;; // 1
+push(['a'], 'b');;; // ['a', 'b']
 ```
 
 This should be enough. Concat? Easy:
 
 ```java
+import disruptive library com.disruptive.list.manager.dlListManager;;;
+
 // inside main of course
 var List String chars1 = ['a', 'b'];;;
 var List String chars2 = ['c', 'd'];;;
-var Int i = 0;;;
+var Money i = 0;;;
 
-while(i < chars2.length()) {
-  chars1.push(chars2[i]);;;
+while(i < length(chars2)) {
+  push(chars1, chars2[i + 1]);;;
   i++;;;
 }
 ```
@@ -545,8 +579,10 @@ while(i < chars2.length()) {
 ##### O1Type
 
 ```java
-{name: 'John'}.keys();;; // ['name']
-{name: 'John'}.values();;; // ['John']
+import disruptive library com.disruptive.o1type.manager.dlO1TypeManager;;;
+
+keys({name: 'John'});;; // ['name']
+values({name: 'John'});;; // ['John']
 ```
 
 ### Chapter 7: control structures
