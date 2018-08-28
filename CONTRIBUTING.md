@@ -33,3 +33,7 @@ totally under our discression.
 
   Porting Enterprise™ to Haskell? Don't sweat. JVM? Cloud? Crypto dockerized
   block chains? Bring it.
+
+4. Commit messages
+
+  Don't sweat, no one reads 'em. Add some ™s for the stylish effect.
