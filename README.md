@@ -20,6 +20,22 @@ able to talk about 'enterprise developers' any more.
 On top of that, articles about the "Best Programming Languages for Enterprise
 Development" will lose their meaning.
 
+## Why learning Enterprise™?
+
+**Check the trends.**
+
+<img style="border: 1px solid #ccc;" src="stars.png" />
+
+<a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" />
+  <img style="border: 1px solid #ccc;" src="graph.png" />
+</a>
+
+Bye bye Java.
+
+**Check the opportunities.**
+
+[https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language](https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language)
+
 ## Enterprise™ guide
 
 * [Comments](#chapter-1-comments)
