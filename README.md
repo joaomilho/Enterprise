@@ -250,8 +250,8 @@ final disruptive class fdcMillenialUserManager {
 }
 ```
 
-A disruptive class doesn't have a constructor. It has only a `main` method
-isntead. Since the method can't be changed by implementors, it must be `final`
+A disruptive class does not have a constructor. It has only a `main` method
+instead. Since the method can't be changed by implementors, it must be `final`
 and `immutable`. And since it returns nothing, it must be `void`.
 
 ```java
@@ -265,9 +265,9 @@ final disruptive class fdcMillenialUserManager {
 ### unnecessary classes
 
 Since all code in Enterprise™ goes in the disruptive class, any other class you
-declare, although syntatically correct, is unnecessary. Because of that, they
+declare, although syntatically correct, is strictly unnecessary. Because of that, they
 _must_ start with the `unnecessary` keyword. Since they can't be extended or
-instantiated, they're also final. Although disruptive classes have a very
+instantiated, they're also `final`. Although disruptive classes have a very
 specific location in your folder structure, unnecessary classes can go anywhere
 (see more on next chapter). Here's an example of an unnecessary class:
 
@@ -276,19 +276,19 @@ final unnecessary class fucNutFreeUserManager {}
 ```
 
 These classes can have a constructor, so that if they _were_ used, they _could_
-receive params. Since constructors don't return, they must be `void`. Since
+receive params. Since constructors do not return, they must be `void`. Since
 the methods can't be overriden – or used –, they're also `final` and `unnecessary`:
 
 ```java
 final unnecessary class fucNutFreeUserManager {
   final unnecessary void constructor(String name, Int nutsEatn, Int maxNuts) {
-    this.name = name
-    this.nutsEatn = nutsEatn
-    this.maxNuts = maxNuts
+    this.name = name;;;
+    this.nutsEatn = nutsEatn;;;
+    this.maxNuts = maxNuts;;;
   }
 
   final unnecessary Int nutsTillDeath() {
-    return this.maxNuts - this.nutsEatn
+    return this.maxNuts - this.nutsEatn;;;
   }
 }
 ```
@@ -360,8 +360,8 @@ integers and floats and 8 chars for other types.
 `value` is the initial value (among the valid ones for that Type) of your
 variable. If a variable is not used, you may add the `unnecessary` flag to it.
 
-The instructions must be ended with three semicolons. This adds clarity to where
-it ends, beats OCaml in 1 and makeys your `;` key weathered over time, so it
+The instructions must be ended with three semicolons (;;;). This a) adds clarity to where
+it ends, b) beats OCaml by 1 and c) makes your `;` key weathered over time, so it
 will look like you work a lot.
 
 Examples:
@@ -434,7 +434,7 @@ i /= 1;;; // 2 (see note below)
 ```
 
 Since floats take too much time to implement properly, and it's more important
-to get Enterprise™ implementations out there, this guid will not dictate how
+to get Enterprise™ implementations out there, this guide will not dictate how
 float operations should behave. Therefore, as an example, all of these are fine:
 
 ```java
@@ -462,15 +462,16 @@ myString += 'bar';;; // 'foobar'
 ##### Bool operations
 
 ```java
-!True // False
-!False // True
-True && True // True
-True && False // False
-False && False // False
+!True;;; // False
+!False;;; // True
+True && True;;; // True
+True && False;;; // False
+False && False;;; // False
 ```
 
 That's it. If you did logic in your CS degree you must be able to do `or`s,
-`xors` and everything else based on these two.
+`xors` and everything else based on these two. If you didn't, you'll probably
+not need it anyway.
 
 ##### List access
 
@@ -570,7 +571,7 @@ if(condition) {
 
 ### Implementations
 
-// TBD
+* [Enterprise™ Web3.0™](https://github.com/joaomilho/Enterprise-Web3.0) - Enterprise™ for the next generation web
 
 ### Roadmap
 
