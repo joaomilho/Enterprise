@@ -19,7 +19,7 @@ under our discretion.
 
    Found a bug? It's fine to fix it, unless there's a disruptive feature to be
    implemented. We prioritize empowering Enterprise™ developers to disrupt, even
-   if there are some rough edges. Rememeber
+   if there are some rough edges. Remember
 
    > If you’re not embarrassed by the first version of your product,
    > you’ve launched too late.
