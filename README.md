@@ -1,6 +1,6 @@
 # Enterprise™
 
-<img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
+<a href="https://www.linkedin.com/search/results/index/?keywords=Enterprise%E2%84%A2%20programming%20language&origin=GLOBAL_SEARCH_HEADER"><img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /></a> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
 
 
 
