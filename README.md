@@ -1,5 +1,9 @@
 # Enterprise™
 
+<img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
+
+
+
 <img src="logo.png" align="right" />
 
 Enterprise™ is a non deterministic unnecessarily statically typed
