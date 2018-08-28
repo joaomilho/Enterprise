@@ -193,7 +193,7 @@ soon/
 
 Classes are named with Hungarian Case. Hungarian Case is similar to Pascal Case,
 but is prefixed with one or more type characters (see more below). A class must
-end with an Enterpresey™ suffix (these suffixes are copyrighted and any use in
+end with an Enterprisey™ suffix (these suffixes are copyrighted and any use in
 other languages may be investigated by our lawyers).
 
 Type characters applicable to classes:
@@ -201,16 +201,16 @@ Type characters applicable to classes:
 * `fdc` final disruptive class
 * `fuc` final unnecessary class
 
-#### Enterpresey™ terms:
+#### Enterprisey™ terms:
 
-After the prefix, a class name may have any number of Enterpresey™ terms. In
-Enterprese™, differently from other languages, class names are not open to
+After the prefix, a class name may have any number of Enterprisey™ terms. In
+Enterprise™, differently from other languages, class names are not open to
 developers' "cre-a-ti-vi-ty". That's because naming is known to be a hard
 problem, and limiting the alternatives makes it so much more predictable. Also,
 forcing developers to comply with that list will boost communication, since
 they'll share a common lingo.
 
-Here's the full list of accepted Enterpresey™ terms:
+Here's the full list of accepted Enterprisey™ terms:
 
 ||||||||
 |-|-|-|-|-|-|-|
