@@ -55,7 +55,7 @@ for corporate usage like:
 ##### line comment
 
 ```java
-// this is boring a line comment
+// this is a boring line comment
 ```
 
 The line comment is useful when you want to restate what the next line does.
@@ -80,7 +80,7 @@ implementation:
 ```java
 /*
   The International Enterprise™ Association only certifies code with a block
-  comment that exceeds three lines, so this comment guarantes our future
+  comment that exceeds three lines, so this comment guarantees our future
   certification.
 */
 ```
@@ -114,7 +114,7 @@ copyright (and a comment). On top of that add an NDA comment (see below).
 NDA/
 ```
 
-##### passive agressive comment
+##### passive aggressive comment
 
 ```
 /?
@@ -145,9 +145,9 @@ is very handy to "explain how you reason" to your interviewer:
 soon/
 ```
 
-If you can't write the best implementation Today, use a improve in the future
+If you can't write the best implementation Today, use an improve in the future
 comment, to ensure it will be done some day. Adding the current day in the
-comment is part of it's syntax, so one doesn't lose track of oldest comments.
+comment is part of its syntax, so one doesn't lose track of oldest comments.
 
 ##### deadline comment
 
@@ -173,7 +173,7 @@ deadline/
   meeting. Let's not let 'em down this time.
 deadline/
 /deadline 2005-01-11
-  Ok... this game may not happen and we may through this 8 year old effort in
+  Ok... this game may not happen and we may throw this 8 year old effort in
   the wastebin of History if we don't get this done. Blogs are making a joke of
   us. Think about your families.
 deadline/
@@ -205,7 +205,7 @@ Type characters applicable to classes:
 
 After the prefix, a class name may have any number of Enterpresey™ terms. In
 Enterprese™, differently from other languages, class names are not open to
-developers "cre-a-ti-vi-ty". That's because naming is known to be a hard
+developers' "cre-a-ti-vi-ty". That's because naming is known to be a hard
 problem, and limiting the alternatives makes it so much more predictable. Also,
 forcing developers to comply with that list will boost communication, since
 they'll share a common lingo.
@@ -285,11 +285,11 @@ final disruptive class fdcMillenialUserManager {
 ### unnecessary classes
 
 Since all code in Enterprise™ goes in the disruptive class, any other class you
-declare, although syntatically correct, is strictly unnecessary. Because of that, they
+declare, although syntactically correct, is strictly unnecessary. Because of that, they
 _must_ start with the `unnecessary` keyword. Since they can't be extended or
 instantiated, they're also `final`. Although disruptive classes have a very
 specific location in your folder structure, unnecessary classes can go anywhere
-(see more on next chapter). Here's an example of an unnecessary class:
+(see more in next chapter). Here's an example of an unnecessary class:
 
 ```java
 final unnecessary class fucNutFreeUserManager {}
@@ -297,7 +297,7 @@ final unnecessary class fucNutFreeUserManager {}
 
 These classes can have a constructor, so that if they _were_ used, they _could_
 receive params. Since constructors do not return, they must be `void`. Since
-the methods can't be overriden – or used –, they're also `final` and `unnecessary`:
+the methods can't be overriden – or used – they're also `final` and `unnecessary`:
 
 ```java
 final unnecessary class fucNutFreeUserManager {
@@ -318,7 +318,7 @@ final unnecessary class fucNutFreeUserManager {
 All Enterprise™ use the extension "E™". This is to make clear these files are
 under a trade mark in a quick glance.
 
-Your folder structure dependends on the name of your disruptive class. Let's say
+Your folder structure depends on the name of your disruptive class. Let's say
 your disruptive class is called
 `fdcDeepLearningDataScienceHolisticFizzBuzzSynergicFrameworkManager`, each word
 represents a nested folder you have to create, in addition to the standard
