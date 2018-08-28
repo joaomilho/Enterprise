@@ -402,22 +402,22 @@ Integers and Floats are all numbers. And in Enterprise™ numbers are generally
 used to represent Money. So here are some nice things agout it:
 
 ```
-var Money i = 0;
-var Money i = 7;
-var Money i = -7;
-var Money i = 5.2;
+var Money i = 0;;;
+var Money i = 7;;;
+var Money i = -7;;;
+var Money i = 5.2;;;
 
 // one grand, who has time for typing so many zeros?
-var Money i = 1k;
+var Money i = 1k;;;
 
 // one million
-var Money i = 1M;
+var Money i = 1M;;;
 
 // easiest language to represent imaginary evaluations
-var Money i = 1B;
+var Money i = 1B;;;
 
 // apple. the american debt. Enterprise™ represents all big numbers.
-var Money i = 1T;
+var Money i = 1T;;;
 ```
 
 ##### String
