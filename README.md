@@ -117,7 +117,7 @@ is very handy to "explain how you reason" to your interviewer:
 ¯\_(ツ)_/¯/
 ```
 
-##### improve in the future comment
+##### time to market comment
 
 ```
 /soon 1985-11-20
