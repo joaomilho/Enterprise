@@ -29,7 +29,7 @@ Bye bye Java.
 
 **Check the opportunities.**
 
-[https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language](https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language)
+[https://www.linkedin.com/jobs/search/?location=Worldwide&keywords=Enterprise™ programming language](https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language&location=Worldwide)
 
 ## Enterprise™ guide
 
