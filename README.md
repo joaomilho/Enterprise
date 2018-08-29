@@ -2,7 +2,7 @@
 
 <a href="https://www.linkedin.com/search/results/index/?keywords=Enterprise%E2%84%A2%20programming%20language&origin=GLOBAL_SEARCH_HEADER"><img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /></a> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
 
-
+> Extra! Extra! * [Disruption Driven Development - Mastering Enterprise™ – the book is in the making!](#disruptive-Driven-Development-the-book)
 
 <img src="logo.png" align="right" />
 
@@ -20,26 +20,23 @@ able to talk about 'enterprise developers' any more.
 On top of that, articles about the "Best Programming Languages for Enterprise
 Development" will lose their meaning.
 
-## Why learning Enterprise™?
-
-**Check the trends.**
-
-<img style="border: 1px solid #ccc;" src="growth.png" width="180" /> <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" /><img style="border: 1px solid #ccc;" src="graph.png" width="414" /></a>
-Bye bye Java.
-
-**Check the opportunities.**
-
-[https://www.linkedin.com/jobs/search/?location=Worldwide&keywords=Enterprise™ programming language](https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language&location=Worldwide)
-
 ## Enterprise™ guide
 
-* [Comments](#chapter-1-comments)
-* [Classes](#chapter-2-classes)
-* [Extensions and file structure](#chapter-3-extensions-and-file-structure)
-* [Variables and types](#chapter-4-variables-and-types)
-* [Operations](#chapter-5-operations)
-* [Built in methods](#chapter-6-built-in-methods)
+* [Specs](#specs)
+  * [Comments](#chapter-1-comments)
+  * [Classes](#chapter-2-classes)
+  * [Extensions and file structure](#chapter-3-extensions-and-file-structure)
+  * [Variables and types](#chapter-4-variables-and-types)
+  * [Operations](#chapter-5-operations)
+  * [Built in methods](#chapter-6-built-in-methods)
 * [Implementations](#implementations)
+* [Why learning Enterprise™?](#why-learning-enterprise)
+* [Disruption Driven Development - The Book](#disruptive-Driven-Development-the-book)
+* [Roadmap](#roadmap)
+
+## Specs
+
+Following are the specifications of the Enterprise™ language.
 
 ### Chapter 1: comments
 
@@ -620,10 +617,28 @@ if(condition) {
 }
 ```
 
-### Implementations
+## Implementations
 
 * [Enterprise™ Web3.0™](https://github.com/joaomilho/Enterprise-Web3.0) - Enterprise™ for the next generation web
 
-### Roadmap
+## Why learning Enterprise™?
+
+**Check the trends.**
+
+<img style="border: 1px solid #ccc;" src="growth.png" width="180" /> <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" /><img style="border: 1px solid #ccc;" src="graph.png" width="414" /></a>
+Bye bye Java.
+
+**Check the opportunities.**
+
+[https://www.linkedin.com/jobs/search/?location=Worldwide&keywords=Enterprise™ programming language](https://www.linkedin.com/jobs/search/?keywords=Enterprise%E2%84%A2%20programming%20language&location=Worldwide)
+
+## DDD - The book
+
+<img src="ddd.png" width="150" />
+
+The book Disruption Driven Development – Mastering Enterprise™ – is in the
+making. Our sales website will be live soon!
+
+## Roadmap
 
 1. Automatic unnecessary classes generator.
