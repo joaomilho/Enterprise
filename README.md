@@ -24,12 +24,7 @@ Development" will lose their meaning.
 
 **Check the trends.**
 
-<img style="border: 1px solid #ccc;" src="growth.png" />
-
-<a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" />
-  <img style="border: 1px solid #ccc;" src="graph.png" />
-</a>
-
+<img style="border: 1px solid #ccc;" src="growth.png" width="180" /> <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" /><img style="border: 1px solid #ccc;" src="graph.png" width="414" /></a>
 Bye bye Java.
 
 **Check the opportunities.**
