@@ -30,7 +30,7 @@ Development" will lose their meaning.
   * [Extensions and file structure](#chapter-3-extensions-and-file-structure)
   * [Variables and types](#chapter-4-variables-and-types)
   * [Operations](#chapter-5-operations)
-  * [Built in methods](#chapter-6-built-in-methods)
+  * [Disruptive libraries](#chapter-6-disruptive-libraries)
 * [Implementations](#implementations)
 * [Why learning Enterprise™?](#why-learning-enterprise)
 * [Disruption Driven Development - The Book](#ddd---the-book)
@@ -528,10 +528,12 @@ grades['mary'];;; // 5
 ### Chapter 6: Disruptive libraries
 
 For the sake of simplicity Enterprise™ doesn't have a standard lib. Instead
-you'll include functionality using disruptive libraries – dl for short. Ex:
+you'll include functionality using disruptive libraries – dl for short.
+There is no package manager or way to create your own lib. This is for your
+own good. Enterprise™ guarantees the [quality](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/)
+and [security](https://www.bleepingcomputer.com/news/security/52-percent-of-all-javascript-npm-packages-could-have-been-hacked-via-weak-credentials/) in all disruptive libraries. Check some examples:
 
-
-##### String
+##### com.disruptive.string.manager.dlStringManager
 
 ```java
 import disruptive library com.disruptive.string.manager.dlStringManager;;;
@@ -561,7 +563,7 @@ while(i < dlListManager.length(hWList)) {
 }
 ```
 
-##### List
+##### com.disruptive.list.manager.dlListManager
 
 ```java
 import disruptive library com.disruptive.list.manager.dlListManager;;;
@@ -586,7 +588,7 @@ while(i < length(chars2)) {
 }
 ```
 
-##### O1Type
+##### com.disruptive.o1type.manager.dlO1TypeManager
 
 ```java
 import disruptive library com.disruptive.o1type.manager.dlO1TypeManager;;;
