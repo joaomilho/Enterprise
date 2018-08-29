@@ -24,7 +24,7 @@ Development" will lose their meaning.
 
 **Check the trends.**
 
-<img style="border: 1px solid #ccc;" src="stars.png" />
+<img style="border: 1px solid #ccc;" src="growth.png" />
 
 <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" />
   <img style="border: 1px solid #ccc;" src="graph.png" />
