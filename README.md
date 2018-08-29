@@ -625,6 +625,53 @@ if(condition) {
 }
 ```
 
+### Chapter 8: safety first
+
+To avoid exceptions we introduce the Null-Verification-Observable-Delayed-Function™ concept.
+This is a completely opt in concept if you need really really safe execution without any exception.
+
+By convention every safe Function call should return a nullable `observableMaybeDo`:
+
+```java
+final unnecessary class accountDisruptor {
+  final unnecessary safe observableMaybeDo disrupt(String name) {
+    return observableMaybeDo -> { this.name = name;;; }
+  }
+}
+```
+
+You can now safely use the `disrupt` function without having to fear an exception
+
+```java
+final unnecessary realentrypoint class Program {
+  
+  var observableMaybeDo accountDisruptor;;;
+  var observableMaybeDo disruptionAction;;;
+
+  final unnecessary entrypoint int main(){
+    accountDisruptor = AnyContainer.generate(<accountDisruptor>);;;
+    if (accountDisruptor != null) {
+      accountDisruptor
+        .execute()
+        .continue(_ -> safeDisrupt(_));;;
+    }
+
+    accountDisruptor.SafeWait();;;
+    disruptionAction.SafeWait();;;
+    return 0;
+  }
+
+  final unnecessary void safeDisrupt(accountDisruptor disruptor) {
+    disruptionAction = disruptor.disrupt("the market");;;
+    if (action != null) {
+      action
+        .execute();;;
+    }
+  }
+}
+
+```
+
 ### Implementations
 
 * [Enterprise™ Web3.0™](https://github.com/joaomilho/Enterprise-Web3.0) - Enterprise™ for the next generation web
