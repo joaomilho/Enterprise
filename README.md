@@ -2,7 +2,9 @@
 
 <a href="https://www.linkedin.com/search/results/index/?keywords=Enterprise%E2%84%A2%20programming%20language&origin=GLOBAL_SEARCH_HEADER"><img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /></a> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
 
-> Extra! Extra! * [Disruption Driven Development - Mastering Enterprise™ – the book is in the making!](#disruptive-Driven-Development-the-book)
+>
+> Extra! Extra! * [Disruption Driven Development - Mastering Enterprise™ – the book is in the making!](#ddd---the-book)
+>
 
 <img src="logo.png" align="right" />
 
@@ -31,7 +33,7 @@ Development" will lose their meaning.
   * [Built in methods](#chapter-6-built-in-methods)
 * [Implementations](#implementations)
 * [Why learning Enterprise™?](#why-learning-enterprise)
-* [Disruption Driven Development - The Book](#disruptive-Driven-Development-the-book)
+* [Disruption Driven Development - The Book](#ddd---the-book)
 * [Roadmap](#roadmap)
 
 ## Specs
