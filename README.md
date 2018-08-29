@@ -31,6 +31,7 @@ Development" will lose their meaning.
   * [Variables and types](#chapter-4-variables-and-types)
   * [Operations](#chapter-5-operations)
   * [Disruptive libraries](#chapter-6-disruptive-libraries)
+  * [Control structures](#chapter-7-control-structures)
 * [Implementations](#implementations)
 * [Why learning Enterprise™?](#why-learning-enterprise)
 * [Disruption Driven Development - The Book](#ddd---the-book)
@@ -40,7 +41,7 @@ Development" will lose their meaning.
 
 Following are the specifications of the Enterprise™ language.
 
-### Chapter 1: comments
+### Chapter 1: Comments
 
 The most important bit in the Enterprise™ are comments. There are 8 different
 types of comments in Enterprise™. Some of them are found in languages not ready
@@ -181,7 +182,7 @@ deadline/
 soon/
 ```
 
-### Chapter 2: classes
+### Chapter 2: Classes
 
 #### naming
 
@@ -342,7 +343,7 @@ Here's that structure in a random editor:
 As stated in previous chapter, unnecessary classes don't need to follow this
 structure. As a matter of fact, the more random you place them, the better.
 
-### Chapter 4: variables and types
+### Chapter 4: Variables and types
 
 Complicated types only makes software complicated. So Enterprise™ has a minimal
 list of types:
@@ -597,7 +598,7 @@ keys({name: 'John'});;; // ['name']
 values({name: 'John'});;; // ['John']
 ```
 
-### Chapter 7: control structures
+### Chapter 7: Control structures
 
 To avoid those pesky functional programmers to take over, Enterprise™ has no
 iterators. No higher order whatever. No LGADBTS. You can do everything with
