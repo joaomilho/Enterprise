@@ -292,7 +292,7 @@ final unnecessary class fucNutFreeUserManager {}
 
 These classes can have a constructor, so that if they _were_ used, they _could_
 receive params. Since constructors do not return, they must be `void`. Since
-the methods can't be overriden – or used – they're also `final` and `unnecessary`:
+the methods can't be overridden – or used – they're also `final` and `unnecessary`:
 
 ```java
 final unnecessary class fucNutFreeUserManager {
@@ -543,7 +543,7 @@ length('hello');;; // 5
 split('hello');;; // ['h', 'e', 'l', 'l', 'o']
 ```
 
-With these 2 basic functions you can do anthing. Substring? No problem:
+With these 2 basic functions you can do anything. Substring? No problem:
 
 ```java
 import disruptive library com.disruptive.string.manager.dlStringManager;;;
