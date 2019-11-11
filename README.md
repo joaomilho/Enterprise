@@ -8,8 +8,8 @@
 
 <img src="logo.png" align="right" />
 
-Enterprise™ is a non deterministic unnecessarily statically typed
-Turing-complete programming language.
+Enterprise™ is a non-deterministic-unnecessarily-statically-typed™
+Turing-complete-ish™, [Quantum-out-of-the-box™](https://github.com/joaomilho/Enterprise/issues/41) programming language.
 
 Enterprise™ is designed to create computer programs that disrupt markets.
 
