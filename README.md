@@ -394,7 +394,7 @@ unnecessary var XML String example = // TBD
 ##### Money
 
 Integers and Floats are all numbers. And in Enterprise™ numbers are generally
-used to represent Money. So here are some nice things agout it:
+used to represent Money. So here are some nice things about it:
 
 ```
 var Money i = 0;;;
