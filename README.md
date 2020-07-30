@@ -439,8 +439,58 @@ Nailed.
 
 ##### XML
 
-// TBD
+XML stands for "XML Markup Language"
 
+Standard XML is cumbersome and can bring a lot of unnecessary complexity by over structuring your data.
+
+Enterprise™ is willing to enforce the best practices from the best in the business, which is why the only supported
+XML structure follows the Apple™ approach seen in .plist™ files, which uses an elegant yet powerful usage of XML
+as a straightforward implementation of the KeyValue™ design pattern™:
+
+```
+<key>some key</key>
+<value>some value</value>
+<key>some other key</key>
+<value>some other value</value>
+<key>yet another key</key>
+<value>yet another value</value>  
+<key>one more key</key>
+<value>one more value</value> 
+``` 
+
+In the unlikely case where you have a really big number of keys and values (say, more than four-ish), it can go on:
+ 
+ ```
+ <key>some unlikely key</key>
+ <value>some unlikely value</value>
+ <key>some other unlikely key</key>
+ <value>some other unlikely value</value>
+ <key>yet another unlikely key</key>
+ <value>yet another unlikely value</value>  
+ <key>one more unlikely key</key>
+ <value>one more unlikely value</value> 
+ ```
+
+Most often, however, you will use XML to define unnecessary values, but not necessarily necessary keys.
+
+If you deem necessary to inform other developers about the unnecessaryness of your values, you'll use the
+`unnecessary="true"` attribute.
+ 
+In some exotic projects, or projects led by exotic architects, you might need keys that are not necessary, which you'll
+decorate with the `necessary="false"` attribute 
+
+It's worth mentioning that these attributes are available on your regular keys and values, AS WELL AS on the ones
+created in the unlikely cases where you have a really big number of keys and values (say, more than four-ish). 
+
+Here is an example of the former case, and we'll leave it as an exercise for you to write an example of the latter:
+
+```
+<key necessary="false">some key</key>
+<value unnecessary="true">some value</value>
+```
+
+One drawback of XML is that it uses a ridiculously large number of angle brackets, which is a concern that will hopefully
+be addressed in Enterprise2™
 
 ### Chapter 5: operations
 
