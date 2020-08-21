@@ -43,7 +43,7 @@ Following are the specifications of the Enterprise™ language.
 
 ### Chapter 1: Comments
 
-The most important bit in the Enterprise™ are comments. There are 8 different
+The most important bits in the Enterprise™ are comments. There are 8 different
 types of comments in Enterprise™. Some of them are found in languages not ready
 for corporate usage like:
 
@@ -409,7 +409,7 @@ var Money i = 1k;;;
 // one million
 var Money i = 1M;;;
 
-// easiest language to represent imaginary evaluations
+// easiest language to represent imaginary valuations
 var Money i = 1B;;;
 
 // apple. the american debt. Enterprise™ represents all big numbers.
