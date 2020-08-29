@@ -6,7 +6,7 @@
 
 <a href="https://www.linkedin.com/search/results/index/?keywords=Enterprise%E2%84%A2%20programming%20language&origin=GLOBAL_SEARCH_HEADER"><img src="https://img.shields.io/badge/linkedin-ready-0077B5.svg" /></a> <img src="https://img.shields.io/badge/build-failing-red.svg" /> <img src="https://img.shields.io/badge/coverage-0%25-red.svg" />
 
-<img src="logo.png" align="right" />
+<img src="assets/logo.png" align="right" />
 
 Enterprise™ is a non-deterministic-unnecessarily-statically-typed™
 Turing-complete-ish™, [Quantum-out-of-the-box™](https://github.com/joaomilho/Enterprise/issues/41) programming language.
@@ -339,7 +339,7 @@ represents a nested folder you have to create, in addition to the standard
 
 Here's that structure in a random editor:
 
-<img src="enterprise-folder-struct.png" align="center" />
+<img src="assets/enterprise-folder-struct.png" align="center" />
 
 As stated in previous chapter, unnecessary classes don't need to follow this
 structure. As a matter of fact, the more random you place them, the better.
@@ -681,7 +681,7 @@ if(condition) {
 
 **Check the trends.**
 
-<img style="border: 1px solid #ccc;" src="growth.png" width="180" /> <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" /><img style="border: 1px solid #ccc;" src="graph.png" width="414" /></a>
+<img style="border: 1px solid #ccc;" src="assets/growth.png" width="180" /> <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=enterprise,java" /><img style="border: 1px solid #ccc;" src="assets/graph.png" width="414" /></a>
 Bye bye Java.
 
 **Check the opportunities.**
@@ -690,7 +690,7 @@ Bye bye Java.
 
 ## DDD - The book
 
-<img src="ddd.png" width="150" />
+<img src="assets/ddd.png" width="150" />
 
 The book Disruption Driven Development – Mastering Enterprise™ – is in the
 making. Our sales website will be live soon!
