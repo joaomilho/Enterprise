@@ -1,0 +1,27 @@
+{
+  "name": "enterprise-web",
+  "version": "3.0.8-xp-tm",
+  "description": "Enterprise™ programming language for the Web3.0™",
+  "main": "index.js",
+  "author": "Juan Lulkin <maiz@lulk.in> (https://medium.com/@joaomilho/)",
+  "license": "/© This code is property of Enterprise™. ©/",
+  "homepage": "https://github.com/joaomilho/Enterprise-Web3.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/joaomilho/Enterprise-Web3.0"
+  },
+  "dependencies": {
+    "cli-highlight": "^2.1.4",
+    "colors": "^1.4.0",
+    "pegjs": "^0.10.0",
+    "yargs": "^15.3.1"
+  },
+  "scripts": {
+    "test": "echo 'ITS OK DAMNIT'"
+  },
+  "bin": {
+    "E™": "./E™",
+    "ETM": "./E™",
+    "enterprise-web": "./E™"
+  }
+}
