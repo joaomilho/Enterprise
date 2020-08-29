@@ -1,0 +1,145 @@
+program = _{ copyright_comment ~ S* ~ import* ~ S* ~ disruptive_class }
+
+lib = {
+    "IO.write.delegator.dlIOWriteDelegator" |
+    "IO.read.delegator.dlIOReadDelegator" |
+    "String.contains.delegator.dlStringContainsDelegator" }
+
+import = _{ "import disruptive library com.disruptive." ~ lib ~ eos ~ S* }
+
+disruptive_class = _{ 
+    "final disruptive class fdc" ~
+    enterprisey_word+ ~ S* ~ 
+    class_body }
+
+class_body = _{ "{" ~ S* ~ main_method ~ S* ~ "}" }
+
+main_method = _{ "final immutable void main () {" ~ S* ~ expr* ~ S* ~ "}" }
+
+expr = _{ S* ~ (decl | if_else_clause | if_clause |  while_clause | mutate | call_expr) ~ S* }
+
+call_expr = _{ call ~ eos }
+call = { callee ~ "(" ~ S* ~ args? ~ S* ~ ")" }
+callee = { var_name }
+
+args = { arg ~ S* ~ ("," ~ S* ~ arg ~ S*)* }
+arg = _{ call | lit | var_name }
+
+mutate = { "mutate" ~ S+ ~ var_name ~ mutation ~ eos }
+mutation = { "++" | "--" }
+
+exprs = { expr* }
+
+block = _{ "{" ~ S* ~ exprs ~ S* ~ "}" }
+test = _{ S* ~ "(" ~ S* ~ testable ~ S* ~ ")" ~ S* }
+
+if_clause = { "if" ~ test ~ block }
+if_else_clause = { "if" ~ test ~ block ~ S* ~ "else" ~ S* ~ block }
+while_clause = { "while" ~ test ~ S* ~ block }
+
+testable = { binary_unit ~ (S* ~ bin_op ~ S* ~ binary_unit)* }
+binary_unit = _{ "(" ~ testable ~ ")" | unary }
+bin_op = _{ math_op | rel_op | eq_op | log_op }
+unary = _{ arg | (unary_op ~ S* ~ unary) }
+
+// literals
+
+lit = _{ bool | money | null | string_box }
+
+bool = { "true" | "false" }
+money = { digits ~ valuation? }
+null = { "null" }
+string_box = _{ "\"" ~ string ~ "\"" }
+string = @{ char* }
+digits = { ASCII_DIGIT+ }
+
+valuation = { "k" | "M" | "B" | "T" }
+
+// ops
+
+unary_op = { "!" }
+math_op = { "*" | "/" | "%" | "+" | "-" }
+rel_op = { "<=" | ">=" | "<" | ">" }
+eq_op = { "==" | "!=" }
+log_op = { "&&" | "||" }
+
+// declarations
+
+var_type = { "String" | "Money" | "Bool" | "Null" }
+decl = { "var" ~ S ~ var_type ~ S ~ var_name ~ S ~ "=" ~ S ~ (lit | call) ~ S* ~ eos }
+var_name = { 'a'..'z'{1,8} }
+
+eos = _{ ";;;" }
+
+char = {
+    !("\"" | "\\") ~ ANY
+    | "\\" ~ ("\"" | "\\" | "/" | "b" | "f" | "n" | "r" | "t")
+    | "\\" ~ ("u" ~ ASCII_HEX_DIGIT{4}) }
+
+// the words
+
+enterprisey_word = _{ "Accelerate" | "Acceleration" | "Account" | "Active" | "Activity" | "Agile" |
+  "Agility" | "Ajax" | "Algo" | "Analytics" | "Analyze" | "Analyzer" | "Ballpark" | "Big" | "Bit" |
+  "Bizmeth" | "Block" | "Boost" | "Bootstrap" | "Bootstraped" | "Brand" | "Business" | "Buzz" |
+  "Car" | "Chain" | "Chart" | "Clickthrough" | "Cloud" | "Coin" | "Consumer" | "Content" |
+  "Converge" | "Convergence" | "Coordinate" | "Coordinator" | "Complex" | "Convert" |
+  "Convertion" | "Cost" | "Costs" | "Critical" | "Crypto" | "Currency" | "Customer" | "Cyber" |
+  "Data" | "Deep" | "Delegate" | "Delegator" | "Design" | "Dev" | "Develop" | "Development" |
+  "Digital" | "Disrupt" | "Disruptor" | "Disruptive" | "Diverse" | "Diversify" | "Diversifier" |
+  "Diversity" | "Downsize" | "Downsized" | "Drive" | "Driven" | "Driver" | "Economy" | "Economic" |
+  "Employ" | "Employee" | "Employer" | "Empowered" | "Engine" | "Enterprise" | "Entrepreneur" |
+  "Entropy" | "Equity" | "Evolution" | "Evolve" | "Evolving" | "Eyeball" | "Eyeballs" |
+  "Evaluation" | "Evaluator" | "Facade" | "Factory" | "Fast" | "Fee" | "Fizz" | "Flat" | "Founder" |
+  "Founders" | "Framework" | "Free" | "Future" | "Fuzzy" | "Generate" | "Generation" | "Generator" |
+  "Global" | "Gluten" | "Graph" | "Graphic" | "Group" | "Growth" | "Guideline" | "Guidelines" |
+  "Hack" | "Hacking" | "Hardware" | "Holistic" | "Human" | "Hyperlocal" | "Immerse" | "Immersion" |
+  "Immersive" | "Innovate" | "Innovative" | "Innovativity" | "Innovator" | "Internet" | "Intranet" |
+  "Invest" | "Investment" | "Item" | "Iterator" | "Java" | "Lactose" | "Learn" | "Learning" |
+  "Leverage" | "Line" | "List" | "Manage" | "Management" | "Manager" | "Market" | "Marketing" |
+  "Media" | "Mega" | "Merchant" | "Message" | "Micro" | "Millenial" | "Mindshare" | "Mine" |
+  "Mining" | "Mission" | "Module" | "Momentum" | "Money" | "Nano" | "Network" | "New" | "Next" |
+  "Number" | "Nut" | "Object" | "Operation" | "Operator" | "Opportunity" | "Ops" | "Order" |
+  "Organic" | "Paradigm" | "Passionate" | "Pattern" | "Person" | "Pie" | "Point" | "Policy" |
+  "Portal" | "Product" | "Proof" | "Provable" | "Proxy" | "Resource" | "Return" | "Roadmap" |
+  "Scalable" | "Science" | "Self" | "Service" | "Services" | "Share" | "Sharing" | "Simple" |
+  "Skeuomorphic" | "Speed" | "Software" | "Solution" | "Square" | "Startup" | "Streamline" |
+  "Streamlined" | "Super" | "Sustainability" | "Sustainable" | "Synergic" | "Synergy" | "System" |
+  "Tax" | "Text" | "Time" | "Trade" | "Trans" | "Upsize" | "Upsizer" | "User" | "Viral" |
+  "Virality" | "Viralize" | "Visual" | "Web" | "World" | "Serverless" | "Server" | "Side" |
+  "Render" | "Universal" | "Native" | "Mobile" | "Angular" |
+  "React" | "Component" | "Cache" | "Domain" | "Frontend" | "Full" | "Fullstack" |
+  "Git" | "Hub" | "Information" | "Script" | "Query" | "Minification" | "First" |
+  "Responsive" | "Ruby" | "Rails" | "Sitemap" | "Wireframe" | "Explorer" | "Netscape" |
+  "Firefox" | "Chrome" | "Safari" | "Android" | "Apple" | "Opera" | "Scroll" |
+  "Scrolling" | "Infinite" | "Landing" | "Hero" | "Mock" | "Mockup" | "Parallax" |
+  "Meta" | "Tag" | "Template" | "Wireframe" | "Vector" | "Metro" | "Above" |
+  "Fold" | "Grid" | "Canvas" | "Boilerplate" | "Modernizr" | "Blocking" | "Quirks" |
+  "Sockets" | "Socket" | "Storage" | "Worker" | "Things" | "Unicorn" | "Quantum" }
+
+// ignorables: comments & spaces
+
+copyright_comment = _{ "/©" ~ (!"©/" ~ ANY)* ~ "©/" }
+nda_comment = _{ "/NDA" ~ (!"NDA/" ~ ANY)* ~ "NDA/" }
+passive_aggressive_comment = _{ "/?" ~ (!"?/" ~ ANY)* ~ "?/" }
+multi_line_comment = _{ "/*" ~ (!"*/" ~ ANY)* ~ "*/" }
+line_comment = _{ "//" ~ (!eol ~ ANY)* }
+
+comment = _{
+    copyright_comment |
+    nda_comment |
+    passive_aggressive_comment |
+    multi_line_comment |
+    line_comment }
+
+eol = _{ "\u{000A}" | "\u{000D}" | "\u{2028}" | "\u{2029}" }
+
+S = _{
+  comment |
+  "\u{0009}" |
+  "\u{000B}" |
+  "\u{000C}" |
+  "\u{0020}" |
+  "\u{00A0}" |
+  "\u{FEFF}" |
+  SPACE_SEPARATOR |
+  eol }
