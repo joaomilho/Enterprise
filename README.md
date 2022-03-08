@@ -675,7 +675,8 @@ if(condition) {
 
 ## Implementations
 
-* [Enterprise™ Web3.0™](https://github.com/joaomilho/Enterprise-Web3.0) - Enterprise™ for the next generation web
+* [Enterprise™ Web3.0™](https://github.com/joaomilho/Enterprise/tree/CEO/node) - Enterprise™ for the next generation web
+* [Enterprise™ rust edition X™](https://github.com/joaomilho/Enterprise/tree/CEO/rust) - Enterprise™: reliable, efficient and disruptive
 
 ## Why learning Enterprise™?
 

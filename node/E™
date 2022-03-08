@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const ast = require('./ast')
+const compile = require('./compile')
+
+require('yargs')
+  .option('turbo', {
+    default: false,
+    type: 'boolean',
+  })
+  .option('output', {
+    alias: 'o',
+    default: false,
+    type: 'boolean',
+  })
+  .command({
+    command: 'compile [input]',
+    description: 'Compile',
+    handler: (argv) => {
+      const code = compile(argv.input, argv.turbo)
+
+      if (argv.file) {
+        fs.writeFileSync(argv.input.replace('E™', 'js'), code, 'utf8')
+      } else {
+        console.log(code)
+      }
+    },
+  })
+  .command({
+    command: 'ast [input]',
+    description: 'Compile',
+    handler: (argv) => {
+      console.log(JSON.stringify(ast(argv.input), null, 2))
+    },
+  })
+  .command({
+    command: 'eval [input]',
+    description: 'Eval',
+    handler: (argv) => {
+      eval(compile(argv.input, argv.turbo))
+    },
+  })
+  .command({
+    command: 'examples',
+    description: 'Downloads examples',
+    handler: (argv) => {},
+  }).argv
