@@ -521,12 +521,13 @@ to get Enterprise™ implementations out there, this guide will not dictate how
 float operations should behave. Therefore, as an example, all of these are fine:
 
 ```java
-2 / 3;;; // 0.66666666
-2 / 3;;; // 0.67
-2 / 3;;; // 0.7
-2 / 3;;; // 1
-2 / 3;;; // 0
-```
+0.1 + 0.2 = 0.3
+0.1 + 0.2 = 0.30000000004
+0.1 + 0.2 = 0.00000000001
+0.1 + 0.2 = 0
+0.1 + 0.2 = 1
+0.1 + 0.2 = "yes please"
+ ```
 
 Anything goes really, as long as you properly document the behaviour of your
 implementation.
