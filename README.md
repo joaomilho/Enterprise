@@ -165,7 +165,7 @@ deadline/
   The board is extremely impatient. No excuses this time.
 deadline/
 /deadline 2002-01-11
-  Come on people, they just gave us a 2 years extention after that horrible
+  Come on people, they just gave us a 2 years extension after that horrible
   meeting. Let's not let 'em down this time.
 deadline/
 /deadline 2005-01-11
